@@ -8,7 +8,7 @@
   --third-color:#a1daf3;
   --fourth-color:#bbf3ff; 
   
-  --text-background:   ;
+  --text: #000000  ;
   --buttons: rgb(14 165 233);  ;
   --button-hover: rgb(3 105 161);
   --background: #a1daf3;
@@ -17,8 +17,11 @@
 body { 
   padding: 0;
   margin: 0;
-  background-color: var(--third-color)
+  background-color: var(--third-color);  
+ 
 }
+
+
 
 
 .color1 {
@@ -40,3 +43,4 @@ body {
 .color5 {
   @apply bg-color5;
 }
+

@@ -12,6 +12,7 @@ export default {
       color3: '#87c2e7',
       color4: '#a1daf3',
       color5: '#bbf3ff',
+      text: '#000000',
     },
 },
   },
