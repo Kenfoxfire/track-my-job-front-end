@@ -13,6 +13,8 @@ export default {
       color4: '#a1daf3',
       color5: '#bbf3ff',
       text: '#000000',
+      buttons: 'rgb(14 165 233)',
+      buttonsHover: 'rgb(3 105 161)',
     },
 },
   },

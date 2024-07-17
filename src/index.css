@@ -44,3 +44,10 @@ body {
   @apply bg-color5;
 }
 
+.buttons { 
+  @apply bg-buttons;
+}
+
+.buttons-hover { 
+  @apply bg-buttonsHover;
+}
