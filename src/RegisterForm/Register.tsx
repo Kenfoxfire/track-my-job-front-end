@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,6 +12,8 @@ const Register = () => {
   const [error , setError ] = useState(false);
   const [submit , setSubmitted ] = useState(false);
 
+
+ 
 
 const handleSubmit = (e:any) => { 
 
@@ -78,6 +80,19 @@ const handleChange = (setter:any) => (e:any) => {
         >
           Log In
         </button>
+
+        <Link to={'/App'}>
+        <div className='py-2'>  
+          <button
+          type="submit"
+          className="w-full  px-4 py-2 font-bold text-white color2  rounded-md hover:bg-buttonsHover focus:outline-none focus:ring-2 focus:color1"
+        >
+          Cancel Register
+        </button> 
+         </div>
+       
+        </Link>
+       
       </div>
     </form>
     {error && <p className="text-red-500">Todos los campos son obligatorios</p>}
