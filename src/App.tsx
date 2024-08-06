@@ -1,34 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Link } from 'react-router-dom';
+import AppRouter from './Router/AppRouter';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    
+    < >
+
+        
+            <AppRouter />
+        
+   
+ 
+    <div className="p-10 m-20  max-w-sm mx-auto color5 rounded-xl shadow-md space-y-4">
+      <h1 className="text-2xl font-bold">Welcome, Finders!</h1>
+      <p className="text-black-900">Here's your personal app to find your perfect fit in a job.</p>
+     
+    </div>
+    <Link to={'/Register'}> 
+    <button className="w-md px-4 py-2 font-bold text-white color2 rounded-md hover:bg-buttonsHover focus:outline-none focus:ring-2 focus:color1"  > Log In  </button>
+     </Link>
+    
+ 
+ 
+    
     </>
+    
   )
 }
 
