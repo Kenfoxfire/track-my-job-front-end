@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import AppRouter from './Router/AppRouter';
+
 
 
 
@@ -20,7 +20,7 @@ function App() {
       <p className="text-black-900">Here's your personal app to find your perfect fit in a job.</p>
      
     </div>
-    <Link to={'/Register'}> 
+    <Link to={'/Login'}> 
     <button className="w-md px-4 py-2 font-bold text-white color2 rounded-md hover:bg-buttonsHover focus:outline-none focus:ring-2 focus:color1"  > Log In  </button>
      </Link>
     

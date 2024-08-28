@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const LoginForm = () => {
 
-    let [user, setUser] = useState( 'hola')
+    let [user, setUser] = useState('hola')
 
 
     setTimeout(() => {

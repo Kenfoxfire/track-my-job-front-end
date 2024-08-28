@@ -81,7 +81,7 @@ const handleChange = (setter:any) => (e:any) => {
           Log In
         </button>
 
-        <Link to={'/'}>
+        <Link to={'/Login'}>
         <div className='py-2'>  
           <button
           type="submit"

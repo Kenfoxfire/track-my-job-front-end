@@ -1,6 +1,7 @@
 
 import Sidebar from '../User/NavBar';
 import Navbar from '../User/SideBar';
+import Profile from './Profile';
 
 
 
@@ -12,7 +13,7 @@ function User() {
       <Sidebar />
       
       <div className="flex-1 flex flex-col ">
-      
+     
         <Navbar />
         
       </div>
