@@ -1,9 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 import Register from '../RegisterForm/Register';
-import User from "../User/User";
 import App from '../App';
 import { LoginForm } from '../LoginForm/LoginForm';
-import Profile from '../User/Profile';
+import UserRoutes from '../Routes/UserRoutes';
+import Profile from '../UserComponents/Profile';
+import MainContent from '../UserComponents/MainContent';
+
+
+
+
 
 const AppRouter = () => {
 
@@ -12,10 +17,13 @@ const AppRouter = () => {
     return (
         <Routes>
              <Route path='/' element={<App />} />
-            <Route path='/Register' element={<Register />} />
-            <Route path='/User' element={<User />} />
-            <Route path='/Profile' element={<Profile/>} />
             <Route path='/Login' element={<LoginForm/>}/>
+            <Route path='/Register' element={<Register />} />
+            <Route path='/UserRoutes/*' element={<UserRoutes />} />
+            <Route path='/MainContent' element={<MainContent/>} />
+            <Route path="/Profile" element={<Profile />} />
+            
+            
         
         </Routes>
     );
