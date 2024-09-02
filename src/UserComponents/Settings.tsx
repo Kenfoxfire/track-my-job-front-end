@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import NavBar from './NavBar';
 
 const SettingsComponent: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
-  const [notifications, setNotifications] = useState<boolean>(true);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.documentElement.classList.toggle("dark", !darkMode);
-  };
+    const [notifications, setNotifications] = useState<boolean>(true);
+    
+    const [darkMode, setDarkMode] = useState<boolean>(() => {
+        // Load initial state from localStorage or default to false
+        const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+        return savedDarkMode;
+      });
+
+  
+
+   useEffect(() => {
+    // Apply dark mode class to the document
+    document.documentElement.classList.toggle("dark", darkMode);
+    // Save dark mode preference to localStorage
+    localStorage.setItem('darkMode', String(darkMode));
+  }, [darkMode]);
 
   const toggleNotifications = () => {
     setNotifications(!notifications);
@@ -24,9 +34,9 @@ const SettingsComponent: React.FC = () => {
         <div className="flex items-center justify-between mb-4">
           <span className="text-color1 dark:text-color5 font-montserrat font-bold">Dark Mode</span>
           <button
-            onClick={toggleDarkMode}
-            className={`w-12 h-6 flex items-center rounded-full p-1  ${
-              darkMode ? "bg-buttons" : "bg-color2"
+            onClick={() => setDarkMode(prev => !prev)}
+            className={`w-12 h-6 flex items-center rounded-full p-1 ${
+              darkMode ? "bg-blue-600" : "bg-gray-300"
             }`}
           >
             <div

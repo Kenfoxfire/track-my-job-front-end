@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <nav className="bg-color1 p-4">
+    <nav className="bg-color1 p-4  dark:bg-darkColor1 ">
       <ul className="flex justify-around">
         
-        <li className="transition-transform duration-500 ease-in-out transform hover:scale-125 font-montserrat font-bold">
+        <li className="transition-transform duration-500 ease-in-out transform hover:scale-125 font-montserrat font-bold ">
         <Link to="/TableComponent" className="text-white ">
            Dashboard
           </Link>
