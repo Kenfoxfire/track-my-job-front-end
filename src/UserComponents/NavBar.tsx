@@ -7,8 +7,8 @@ const NavBar = () => {
       <ul className="flex justify-around">
         
         <li className="transition-transform duration-500 ease-in-out transform hover:scale-125">
-        <Link to="/MainContent" className="text-white ">
-            MainContent
+        <Link to="/TableComponent" className="text-white ">
+           Dashboard
           </Link>
         </li>
        

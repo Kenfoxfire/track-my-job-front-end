@@ -4,9 +4,10 @@ import NavBar from "./NavBar";
 
 const Profile = () => {
   return (
-<> 
-    <NavBar/>
-    <div className="bg-white border rounded-lg shadow-lg max-w-4xl mx-auto overflow-hidden">
+<>
+  <NavBar />
+  <div className="flex items-center justify-center max-h-screen">
+    <div className="bg-white border justify-center rounded-lg shadow-lg max-w-4xl mx-auto overflow-hidden">
       <div className="relative">
         <img
           src="https://cdn-icons-png.flaticon.com/512/5969/5969113.png"
@@ -26,9 +27,9 @@ const Profile = () => {
           <div className="text-center sm:text-left">
             <h2 className="text-2xl font-bold text-gray-800 p-10">Obed Baltodano</h2>
             <p className="text-gray-600">Software Engineer</p>
-            <p className="text-gray-500">San Jose , Costa Rica| 200+ connections</p>
+            <p className="text-gray-500">San Jose , Costa Rica | 200+ connections</p>
           </div>
-          <div className="mt-4 sm:mt-0  sm:flex-row space-y-2 sm:space-y-2 sm:space-x-2">
+          <div className="mt-4 sm:mt-0 sm:flex-row space-y-2 sm:space-y-2 sm:space-x-2">
             <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
               Connect
             </button>
@@ -59,9 +60,10 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      
     </div>
-    </>
+  </div>
+</>
+
   );
 };
 

@@ -100,12 +100,12 @@ const handleChange = (setter:any) => (e:any) => {
           <div className="p-10 mt-10 bg-blue-100 rounded-xl shadow-md space-y-4">
             <h1 className="text-2xl font-bold">Welcome {user}!</h1>
             <p className="text-black-900">Here's your personal app to find your perfect fit in a job.</p>
-            <Link to={'/UserRoutes'} >
+            <Link to={'/TableComponent'} >
             <button
              type="submit"
              className="w-full mt-10 px-4 py-2 font-bold text-white color2 rounded-md hover:bg-buttonsHover focus:outline-none focus:ring-2 focus:color1"
             >
-          Sign In
+          Continue!
         </button>
             </Link>
           </div>

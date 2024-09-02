@@ -23,7 +23,7 @@ const handleClick = ()=>{
     <>
       <section className="flex flex-col items-center justify-center min-h-screen color3">
         <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
-            <h1 className="text-2xl font-bold text-center">Login Form</h1>
+            <h1 className="text-2xl font-bold text-center">Sign In Form</h1>
             <form className="space-y-6">
             <div className="space-y-2">
                 <input 
@@ -46,7 +46,7 @@ const handleClick = ()=>{
             <div>
                 <button 
                 type="submit"
-                className="w-full px-4 py-2 font-bold text-white color2 rounded-md hover:bg-buttonsHover focus:outline-none focus:ring-2 focus:color1">Log In</button>
+                className="w-full px-4 py-2 font-bold text-white color2 rounded-md hover:bg-buttonsHover focus:outline-none focus:ring-2 focus:color1">Sign In</button>
             </div>
             <div>
                 <button

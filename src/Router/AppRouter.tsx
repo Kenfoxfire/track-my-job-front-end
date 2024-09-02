@@ -2,9 +2,10 @@ import { Routes, Route } from 'react-router-dom';
 import Register from '../RegisterForm/Register';
 import App from '../App';
 import { LoginForm } from '../LoginForm/LoginForm';
-import UserRoutes from '../Routes/UserRoutes';
+
 import Profile from '../UserComponents/Profile';
-import MainContent from '../UserComponents/MainContent';
+import TableComponent from '../UserComponents/TableComponent';
+import SettingsComponent from '../UserComponents/Settings';
 
 
 
@@ -19,9 +20,10 @@ const AppRouter = () => {
              <Route path='/' element={<App />} />
             <Route path='/Login' element={<LoginForm/>}/>
             <Route path='/Register' element={<Register />} />
-            <Route path='/UserRoutes/*' element={<UserRoutes />} />
-            <Route path='/MainContent' element={<MainContent/>} />
+           
+            <Route path='/TableComponent' element={<TableComponent/>} />
             <Route path="/Profile" element={<Profile />} />
+            <Route path='/Settings' element={<SettingsComponent/>}  />
             
             
         
