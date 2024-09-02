@@ -2,28 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light Mode Styles */
 :root {
-  --primary-color: #5290ce;
-  --secondary-color: #6ca9da;
-  --third-color:#a1daf3;
-  --fourth-color:#bbf3ff; 
-  
-  --text-color: #000000;
-  --buttons: rgb(14 165 233);  
-  --button-hover: rgb(3 105 161);
-  --background: #a1daf3;
+  --primary-color: theme('colors.color1');
+  --secondary-color: theme('colors.color2');
+  --third-color: theme('colors.color3');
+  --fourth-color: theme('colors.color4');
+  --text-color: theme('colors.text');
+  --buttons: theme('colors.buttons');
+  --button-hover: theme('colors.buttonsHover');
+  --background: theme('colors.color3');
 }
 
-body { 
+body {
   padding: 0;
   margin: 0;
-  background-color: var(--third-color);  
- 
+  background-color: var(--background);
 }
 
-
-
-
+/* Light Mode Classes */
 .color1 {
   @apply bg-color1;
 }
@@ -44,10 +41,43 @@ body {
   @apply bg-color5;
 }
 
-.buttons { 
+.buttons {
   @apply bg-buttons;
 }
 
-.buttons-hover { 
+.buttons-hover {
   @apply bg-buttonsHover;
+}
+
+/* Dark Mode Classes */
+.dark .color1 {
+  @apply bg-darkColor1;
+}
+
+.dark .color2 {
+  @apply bg-darkColor2;
+}
+
+.dark .color3 {
+  @apply bg-darkColor3;
+}
+
+.dark .color4 {
+  @apply bg-darkColor4;
+}
+
+.dark .darkText {
+  @apply text-darkText;
+}
+
+.dark .buttons {
+  @apply bg-darkButtons;
+}
+
+.dark .buttons-hover {
+  @apply bg-darkButtonsHover;
+}
+
+.dark .background {
+  @apply bg-darkBackground;
 }
