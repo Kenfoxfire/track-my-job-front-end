@@ -1,21 +1,12 @@
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
 
 export const LoginForm = () => {
 
-    let [user, setUser] = useState('hola')
+   
 
 
-    setTimeout(() => {
-     setUser('Chompipe') 
-    }, 2000);
-
-const handleClick = ()=>{
-
-    setUser("Bryan")
-
-}
-<button onClick={handleClick}></button> // Prueba de fun
+// Prueba de fun
 
 
 
