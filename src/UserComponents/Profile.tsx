@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
+import perfil from "../assets/obed-animated.jpg";
 
 const Profile: React.FC = () => {
   return (
@@ -9,14 +10,13 @@ const Profile: React.FC = () => {
         <div className="bg-white dark:bg-darkBackground border border-color1 dark:border-darkColor1 rounded-lg shadow-lg max-w-4xl mx-auto overflow-hidden">
           <div className="relative">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/5969/5969113.png"
+              src="https://selfmadewebdesigner.com/wp-content/uploads/2020/07/how-to-advance-your-career-as-a-frontend-web-developer.jpg"
               alt="Cover"
               className="w-full h-48 object-cover rounded-t-lg"
             />
             <div className="absolute left-4 bottom-0 transform translate-y-1/2">
               <img
-                src="https://img.freepik.com/vector-premium/perfil-avatar-hombre-icono-redondo_24640-14044.jpg"
-                alt="Profile"
+                src={perfil}
                 className="w-24 h-24 rounded-full border-4 border-color4 dark:border-darkColor2"
               />
             </div>

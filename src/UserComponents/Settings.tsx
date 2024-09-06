@@ -12,8 +12,7 @@ const SettingsComponent: React.FC = () => {
       });
 
   
-
-   useEffect(() => {
+    useEffect(() => {
     // Apply dark mode class to the document
     document.documentElement.classList.toggle("dark", darkMode);
     // Save dark mode preference to localStorage
@@ -24,6 +23,8 @@ const SettingsComponent: React.FC = () => {
     setNotifications(!notifications);
   };
 
+
+  
   return (
     <> 
       <NavBar />

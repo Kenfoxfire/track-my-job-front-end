@@ -24,8 +24,6 @@ const AppRouter = () => {
             <Route path="/Profile" element={<Profile />} />
             <Route path='/Settings' element={<SettingsComponent/>}  />
             
-            
-        
         </Routes>
     );
 }
