@@ -10,8 +10,8 @@ export const LoginForm = () => {
   const dispatch = useDispatch();
 
 const { email, password, onInputChange } = useForm({
-  email: "obedbaltodano@gmail.com",
-  password: "123456"
+  email: "",
+  password: ""
 });
 
 const onSubmit = (event:any) => {
