@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import Register from '../RegisterForm/Register';
 import App from '../App';
 import { LoginForm } from '../LoginForm/LoginForm';
-
 import Profile from '../UserComponents/Profile';
 import TableComponent from '../UserComponents/TableComponent';
 import SettingsComponent from '../UserComponents/Settings';
